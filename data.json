@@ -1,0 +1,2615 @@
+{
+  "schema_version": 6,
+  "project": {
+    "id": "dacha-layout",
+    "name": "Варианты планировки дачного участка",
+    "notes": [
+      "Север задан приближённым вектором от точки 7 к точке 3.",
+      "Это эскизная модель, а не геодезический план.",
+      "Перед строительством размеры и санитарные отступы нужно проверить на местности."
+    ]
+  },
+  "plot": {
+    "id": "main-plot",
+    "name": "Участок ЗУ1",
+    "north_axis": "custom_vector",
+    "north_direction": {
+      "x": 0.7187724443,
+      "z": 0.6952454051
+    },
+    "north_reference": "approximate vector from marker 7 to marker 3",
+    "dimensions": {
+      "front_width_m": 22.0,
+      "rear_width_m": 33.0,
+      "left_side_m": 60.0,
+      "right_side_m": 60.0,
+      "declared_area_sqm": 1643.0530842
+    },
+    "markers": [
+      {
+        "id": "9",
+        "position": {
+          "x": -11.0,
+          "z": 59.74738488
+        },
+        "role": "front_left_corner",
+        "accuracy": "calculated_model",
+        "note": "Северо-западный угол; рядом находятся ворота и заезд."
+      },
+      {
+        "id": "1",
+        "position": {
+          "x": 11.0,
+          "z": 59.74738488
+        },
+        "role": "front_right_corner",
+        "accuracy": "calculated_model",
+        "note": "Северо-восточный угол."
+      },
+      {
+        "id": "3",
+        "position": {
+          "x": 12.19166667,
+          "z": 46.80211816
+        },
+        "role": "boundary_marker",
+        "accuracy": "calculated_from_distance",
+        "note": "Расположена в 13 м от точки 1 вдоль восточной стороны."
+      },
+      {
+        "id": "4",
+        "position": {
+          "x": 16.5,
+          "z": 0.0
+        },
+        "role": "rear_right_corner",
+        "accuracy": "calculated_model",
+        "note": "Юго-восточный угол."
+      },
+      {
+        "id": "5",
+        "position": {
+          "x": -16.5,
+          "z": 0.0
+        },
+        "role": "rear_left_corner",
+        "accuracy": "calculated_model",
+        "note": "Юго-западный угол."
+      },
+      {
+        "id": "6",
+        "position": {
+          "x": -15.92983333,
+          "z": 6.19381223
+        },
+        "role": "boundary_marker",
+        "accuracy": "calculated_from_distance",
+        "note": "Расположена в 6,22 м от точки 5 вдоль западной стороны; туалет находится у забора между точками 5 и 6."
+      },
+      {
+        "id": "7",
+        "position": {
+          "x": -14.575,
+          "z": 20.91158471
+        },
+        "role": "boundary_marker",
+        "accuracy": "calculated_from_distance",
+        "note": "39 м от точки 9 и 21 м от точки 5 вдоль западной стороны."
+      },
+      {
+        "id": "8",
+        "position": {
+          "x": -12.83333333,
+          "z": 39.83158992
+        },
+        "role": "boundary_marker",
+        "accuracy": "approximate_from_image",
+        "note": "Положение оценено по изображению."
+      }
+    ],
+    "boundary_order": [
+      "9",
+      "1",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8"
+    ],
+    "corner_ids": [
+      "9",
+      "1",
+      "4",
+      "5"
+    ],
+    "fill_color": [
+      198,
+      218,
+      240,
+      120
+    ],
+    "boundary_color": [
+      24,
+      65,
+      135,
+      255
+    ],
+    "hatch": {
+      "spacing_m": 5.0,
+      "line_width_m": 0.22,
+      "color": [
+        25,
+        85,
+        220,
+        210
+      ]
+    },
+    "fence": {
+      "front_height_m": 2.0,
+      "other_height_m": 1.8,
+      "thickness_m": 0.15,
+      "color": [
+        55,
+        60,
+        65,
+        255
+      ],
+      "protected": true
+    },
+    "notes": [
+      "Модель — равнобедренная трапеция с фасадом 22 м, тылом 33 м и боковыми сторонами 60 м.",
+      "Высота трапеции 59,747 м; расчетная площадь около 1643 м² (16,43 сотки).",
+      "Черная точка 2 относится к границам старого участка и в модель не включена.",
+      "Точки с пометкой approximate_from_image требуют уточнения по обмерам."
+    ]
+  },
+  "fixed_buildings": [
+    {
+      "id": "toilet",
+      "kind": "toilet",
+      "name": "Туалет",
+      "center": {
+        "x": -15.0,
+        "z": 2.5
+      },
+      "footprint": {
+        "width": 1.2,
+        "depth": 1.2
+      },
+      "height_m": 2.2,
+      "floors": 1,
+      "movable": true,
+      "wall_height_m": null,
+      "roof": null,
+      "rotation_y": 0.0,
+      "protected": true,
+      "variant": "",
+      "color": [
+        121,
+        85,
+        58,
+        255
+      ],
+      "secondary_color": [
+        121,
+        85,
+        58,
+        255
+      ],
+      "note": "У западного забора между точками 5 и 6."
+    }
+  ],
+  "fixed_features": [
+    {
+      "id": "front_gate",
+      "kind": "gate",
+      "name": "Ворота",
+      "center": {
+        "x": -3.85,
+        "z": 59.54738488
+      },
+      "size": {
+        "width": 4.3,
+        "depth": 0.4
+      },
+      "shape": "rectangle",
+      "height_m": 2.0,
+      "movable": false,
+      "rotation_y": 0.0,
+      "protected": true,
+      "variant": "",
+      "color": [
+        55,
+        60,
+        65,
+        255
+      ],
+      "secondary_color": [
+        55,
+        60,
+        65,
+        255
+      ],
+      "note": "Начало ворот примерно в 5 м от точки 9; ширина автомобильного проема 4,3 м."
+    },
+    {
+      "id": "front_wicket",
+      "kind": "wicket",
+      "name": "Калитка",
+      "center": {
+        "x": -1.3,
+        "z": 59.54738488
+      },
+      "size": {
+        "width": 0.8,
+        "depth": 0.4
+      },
+      "shape": "rectangle",
+      "height_m": 2.0,
+      "movable": false,
+      "rotation_y": 0.0,
+      "protected": true,
+      "variant": "",
+      "color": [
+        55,
+        60,
+        65,
+        255
+      ],
+      "secondary_color": [
+        55,
+        60,
+        65,
+        255
+      ],
+      "note": "Примыкает к воротам со стороны точки 1; ворота и калитка образуют общий проем 5,1 м."
+    },
+    {
+      "id": "rear_wicket",
+      "kind": "wicket",
+      "name": "Калитка (тыл)",
+      "center": {
+        "x": -13.6,
+        "z": 0.2
+      },
+      "size": {
+        "width": 0.8,
+        "depth": 0.4
+      },
+      "shape": "rectangle",
+      "height_m": 1.8,
+      "movable": false,
+      "rotation_y": 0.0,
+      "protected": true,
+      "variant": "",
+      "color": [
+        55,
+        60,
+        65,
+        255
+      ],
+      "secondary_color": [
+        55,
+        60,
+        65,
+        255
+      ],
+      "note": "На заднем заборе; начало проема примерно в 2,5 м от точки 5 в сторону точки 4."
+    },
+    {
+      "id": "well",
+      "kind": "well",
+      "name": "Колодец",
+      "center": {
+        "x": 11.0,
+        "z": 17.0
+      },
+      "size": {
+        "width": 1.4,
+        "depth": 1.4
+      },
+      "shape": "circle",
+      "height_m": 1.5,
+      "movable": true,
+      "rotation_y": 0.0,
+      "protected": false,
+      "variant": "",
+      "color": [
+        145,
+        145,
+        140,
+        255
+      ],
+      "secondary_color": [
+        92,
+        49,
+        42,
+        255
+      ],
+      "note": "Положение приблизительное: севернее старой черной точки 2 и примерно в 4 м от восточного забора.",
+      "well_structure": {
+        "ring_height_m": 0.7,
+        "roof_height_m": 0.8,
+        "roof_overhang_m": 0.2,
+        "ridge_axis": "x",
+        "roof_color": [
+          92,
+          49,
+          42,
+          255
+        ]
+      }
+    }
+  ],
+  "surroundings": {
+    "areas": [
+      {
+        "id": "north-common-land",
+        "kind": "common_land",
+        "name": "Земли общего пользования",
+        "boundary": [
+          {
+            "x": -52.0,
+            "z": 58.0
+          },
+          {
+            "x": -11.0,
+            "z": 59.74738488
+          },
+          {
+            "x": 11.0,
+            "z": 59.74738488
+          },
+          {
+            "x": 18.0,
+            "z": 63.0
+          },
+          {
+            "x": 39.0,
+            "z": 85.0
+          },
+          {
+            "x": -52.0,
+            "z": 85.0
+          }
+        ],
+        "height_m": 0.015,
+        "color": [
+          108,
+          139,
+          91,
+          255
+        ],
+        "note": "Частично показанная полоса общего пространства под дорогой и придорожной канавой."
+      },
+      {
+        "id": "east-neighbour-land",
+        "kind": "neighbour_plot",
+        "name": "Соседний участок 0525:160",
+        "boundary": [
+          {
+            "x": 11.0,
+            "z": 59.74738488
+          },
+          {
+            "x": 12.19166667,
+            "z": 46.80211816
+          },
+          {
+            "x": 16.5,
+            "z": 0.0
+          },
+          {
+            "x": 42.0,
+            "z": -2.0
+          },
+          {
+            "x": 41.0,
+            "z": 48.0
+          },
+          {
+            "x": 31.0,
+            "z": 67.0
+          },
+          {
+            "x": 17.0,
+            "z": 65.0
+          }
+        ],
+        "height_m": 0.025,
+        "color": [
+          119,
+          151,
+          94,
+          255
+        ],
+        "note": "Показана только прилегающая к участку часть восточного соседнего участка."
+      },
+      {
+        "id": "west-neighbour-north",
+        "kind": "neighbour_plot",
+        "name": "Соседний участок у точек 9–8",
+        "boundary": [
+          {
+            "x": -11.0,
+            "z": 59.74738488
+          },
+          {
+            "x": -12.83333333,
+            "z": 39.83158992
+          },
+          {
+            "x": -42.70723,
+            "z": 42.57859
+          },
+          {
+            "x": -40.8739,
+            "z": 62.49438
+          }
+        ],
+        "height_m": 0.02,
+        "color": [
+          126,
+          155,
+          101,
+          255
+        ],
+        "note": "Частичная полоса соседнего участка на западной стороне."
+      },
+      {
+        "id": "west-neighbour-middle",
+        "kind": "neighbour_plot",
+        "name": "Соседний участок у точек 8–7",
+        "boundary": [
+          {
+            "x": -12.83333333,
+            "z": 39.83158992
+          },
+          {
+            "x": -14.575,
+            "z": 20.91158471
+          },
+          {
+            "x": -44.4489,
+            "z": 23.65858
+          },
+          {
+            "x": -42.70723,
+            "z": 42.57859
+          }
+        ],
+        "height_m": 0.02,
+        "color": [
+          113,
+          146,
+          91,
+          255
+        ],
+        "note": "Частичная полоса соседнего участка на западной стороне."
+      },
+      {
+        "id": "west-neighbour-south",
+        "kind": "neighbour_plot",
+        "name": "Соседний участок у точек 7–6",
+        "boundary": [
+          {
+            "x": -14.575,
+            "z": 20.91158471
+          },
+          {
+            "x": -15.92983333,
+            "z": 6.19381223
+          },
+          {
+            "x": -45.80373,
+            "z": 8.94081
+          },
+          {
+            "x": -44.4489,
+            "z": 23.65858
+          }
+        ],
+        "height_m": 0.02,
+        "color": [
+          132,
+          158,
+          103,
+          255
+        ],
+        "note": "Частичная полоса соседнего участка на западной стороне."
+      }
+    ],
+    "linear_objects": [
+      {
+        "id": "front-drainage-ditch",
+        "kind": "ditch_marker",
+        "name": "Канава — штрих 1",
+        "points": [
+          {
+            "x": -10.75,
+            "z": 66.0
+          },
+          {
+            "x": -8.75,
+            "z": 66.0
+          }
+        ],
+        "width_m": 0.4,
+        "height_m": 0.04,
+        "style": "ditch_dash",
+        "color": [
+          45,
+          125,
+          220,
+          220
+        ],
+        "secondary_color": [
+          45,
+          125,
+          220,
+          220
+        ],
+        "movable": true,
+        "rotation_y": 20.0,
+        "protected": true,
+        "variant": "",
+        "note": "Условный редактируемый штрих канавы; можно перемещать и поворачивать в режиме создания участка."
+      },
+      {
+        "id": "front-drainage-ditch-02",
+        "kind": "ditch_marker",
+        "name": "Канава — штрих 2",
+        "points": [
+          {
+            "x": -8.25,
+            "z": 65.0
+          },
+          {
+            "x": -6.25,
+            "z": 65.0
+          }
+        ],
+        "width_m": 0.4,
+        "height_m": 0.04,
+        "style": "ditch_dash",
+        "color": [
+          45,
+          125,
+          220,
+          220
+        ],
+        "secondary_color": [
+          45,
+          125,
+          220,
+          220
+        ],
+        "movable": true,
+        "rotation_y": 15.0,
+        "protected": true,
+        "variant": "",
+        "note": "Условный редактируемый штрих канавы; можно перемещать и поворачивать в режиме создания участка."
+      },
+      {
+        "id": "front-drainage-ditch-03",
+        "kind": "ditch_marker",
+        "name": "Канава — штрих 3",
+        "points": [
+          {
+            "x": -4.0,
+            "z": 60.54738488
+          },
+          {
+            "x": -2.0,
+            "z": 60.54738488
+          }
+        ],
+        "width_m": 0.4,
+        "height_m": 0.04,
+        "style": "ditch_dash",
+        "color": [
+          45,
+          125,
+          220,
+          220
+        ],
+        "secondary_color": [
+          45,
+          125,
+          220,
+          220
+        ],
+        "movable": true,
+        "rotation_y": 0.0,
+        "protected": true,
+        "variant": "",
+        "note": "Условный редактируемый штрих канавы; можно перемещать и поворачивать в режиме создания участка."
+      },
+      {
+        "id": "front-drainage-ditch-04",
+        "kind": "ditch_marker",
+        "name": "Канава — штрих 4",
+        "points": [
+          {
+            "x": -0.25,
+            "z": 64.0
+          },
+          {
+            "x": 1.75,
+            "z": 64.0
+          }
+        ],
+        "width_m": 0.4,
+        "height_m": 0.04,
+        "style": "ditch_dash",
+        "color": [
+          45,
+          125,
+          220,
+          220
+        ],
+        "secondary_color": [
+          45,
+          125,
+          220,
+          220
+        ],
+        "movable": true,
+        "rotation_y": 0.0,
+        "protected": true,
+        "variant": "",
+        "note": "Условный редактируемый штрих канавы; можно перемещать и поворачивать в режиме создания участка."
+      },
+      {
+        "id": "front-drainage-ditch-05",
+        "kind": "ditch_marker",
+        "name": "Канава — штрих 5",
+        "points": [
+          {
+            "x": 2.75,
+            "z": 64.0
+          },
+          {
+            "x": 4.75,
+            "z": 64.0
+          }
+        ],
+        "width_m": 0.4,
+        "height_m": 0.04,
+        "style": "ditch_dash",
+        "color": [
+          45,
+          125,
+          220,
+          220
+        ],
+        "secondary_color": [
+          45,
+          125,
+          220,
+          220
+        ],
+        "movable": true,
+        "rotation_y": 0.0,
+        "protected": true,
+        "variant": "",
+        "note": "Условный редактируемый штрих канавы; можно перемещать и поворачивать в режиме создания участка."
+      },
+      {
+        "id": "front-drainage-ditch-06",
+        "kind": "ditch_marker",
+        "name": "Канава — штрих 6",
+        "points": [
+          {
+            "x": 6.0,
+            "z": 64.0
+          },
+          {
+            "x": 8.0,
+            "z": 64.0
+          }
+        ],
+        "width_m": 0.4,
+        "height_m": 0.04,
+        "style": "ditch_dash",
+        "color": [
+          45,
+          125,
+          220,
+          220
+        ],
+        "secondary_color": [
+          45,
+          125,
+          220,
+          220
+        ],
+        "movable": true,
+        "rotation_y": 10.0,
+        "protected": true,
+        "variant": "",
+        "note": "Условный редактируемый штрих канавы; можно перемещать и поворачивать в режиме создания участка."
+      },
+      {
+        "id": "front-drainage-ditch-07",
+        "kind": "ditch_marker",
+        "name": "Канава — штрих 7",
+        "points": [
+          {
+            "x": 9.5,
+            "z": 63.5
+          },
+          {
+            "x": 11.5,
+            "z": 63.5
+          }
+        ],
+        "width_m": 0.4,
+        "height_m": 0.04,
+        "style": "ditch_dash",
+        "color": [
+          45,
+          125,
+          220,
+          220
+        ],
+        "secondary_color": [
+          45,
+          125,
+          220,
+          220
+        ],
+        "movable": true,
+        "rotation_y": 0.0,
+        "protected": true,
+        "variant": "",
+        "note": "Условный редактируемый штрих канавы; можно перемещать и поворачивать в режиме создания участка."
+      },
+      {
+        "id": "driveway-over-ditch",
+        "kind": "driveway_connection",
+        "name": "заезд",
+        "points": [
+          {
+            "x": -3.0,
+            "z": 59.5
+          },
+          {
+            "x": -3.0,
+            "z": 76.5
+          }
+        ],
+        "width_m": 4.4,
+        "height_m": 0.12,
+        "style": "road",
+        "color": [
+          204,
+          202,
+          188,
+          255
+        ],
+        "secondary_color": [
+          204,
+          202,
+          188,
+          255
+        ],
+        "movable": true,
+        "rotation_y": 5.0,
+        "protected": true,
+        "variant": "",
+        "note": "Щебёночный заезд от ворот через канаву к дороге."
+      },
+      {
+        "id": "east-boundary-neighbour-fence",
+        "kind": "neighbour_fence",
+        "name": "Зелёный соседский забор 3–4",
+        "points": [
+          {
+            "x": 12.19166667,
+            "z": 46.80211816
+          },
+          {
+            "x": 16.5,
+            "z": 0.0
+          }
+        ],
+        "width_m": 0.1,
+        "height_m": 1.8,
+        "style": "boundary_fence",
+        "color": [
+          28,
+          91,
+          53,
+          255
+        ],
+        "secondary_color": [
+          28,
+          91,
+          53,
+          255
+        ],
+        "movable": false,
+        "rotation_y": 0.0,
+        "protected": true,
+        "variant": "",
+        "note": "Зелёный профлист принадлежит восточному соседу."
+      },
+      {
+        "id": "east-cross-fence-3",
+        "kind": "neighbour_fence",
+        "name": "Зелёный соседский забор от точки 3",
+        "points": [
+          {
+            "x": 12.19166667,
+            "z": 46.80211816
+          },
+          {
+            "x": 42.06535911,
+            "z": 49.55211816
+          }
+        ],
+        "width_m": 0.1,
+        "height_m": 1.8,
+        "style": "fence",
+        "color": [
+          28,
+          91,
+          53,
+          255
+        ],
+        "secondary_color": [
+          28,
+          91,
+          53,
+          255
+        ],
+        "movable": true,
+        "rotation_y": 0.0,
+        "protected": true,
+        "variant": "",
+        "note": "Зелёный соседский забор длиной 30 м, построенный под прямым углом к участку 3–4 в северо-восточную сторону."
+      },
+      {
+        "id": "west-boundary-neighbour-fence",
+        "kind": "neighbour_fence",
+        "name": "Серебристый соседский забор 9–7",
+        "points": [
+          {
+            "x": -11.0,
+            "z": 59.74738488
+          },
+          {
+            "x": -12.83333333,
+            "z": 39.83158992
+          },
+          {
+            "x": -14.575,
+            "z": 20.91158471
+          }
+        ],
+        "width_m": 0.1,
+        "height_m": 1.8,
+        "style": "boundary_fence",
+        "color": [
+          181,
+          185,
+          184,
+          255
+        ],
+        "secondary_color": [
+          181,
+          185,
+          184,
+          255
+        ],
+        "movable": false,
+        "rotation_y": 0.0,
+        "protected": true,
+        "variant": "",
+        "note": "Серебристый профлист принадлежит западным соседям."
+      },
+      {
+        "id": "west-cross-fence-9",
+        "kind": "neighbour_fence",
+        "name": "Серебристый соседский забор за точкой 9",
+        "points": [
+          {
+            "x": -11.0,
+            "z": 59.74738488
+          },
+          {
+            "x": -10.54166667,
+            "z": 64.72633362
+          },
+          {
+            "x": -40.41535911,
+            "z": 67.47633362
+          }
+        ],
+        "width_m": 0.1,
+        "height_m": 2.0,
+        "style": "fence",
+        "color": [
+          181,
+          185,
+          184,
+          255
+        ],
+        "secondary_color": [
+          181,
+          185,
+          184,
+          255
+        ],
+        "movable": true,
+        "rotation_y": 0.0,
+        "protected": true,
+        "variant": "",
+        "note": "Линия 8–9 продолжена за точку 9 на 5 м; от новой точки серебристый участок длиной 30 м идёт на юго-запад под прямым углом."
+      },
+      {
+        "id": "west-cross-fence-8",
+        "kind": "neighbour_fence",
+        "name": "Поперечный соседский забор от точки 8",
+        "points": [
+          {
+            "x": -12.83333333,
+            "z": 39.83158992
+          },
+          {
+            "x": -42.70723,
+            "z": 42.57859
+          }
+        ],
+        "width_m": 0.1,
+        "height_m": 2.0,
+        "style": "fence",
+        "color": [
+          102,
+          112,
+          108,
+          255
+        ],
+        "secondary_color": [
+          102,
+          112,
+          108,
+          255
+        ],
+        "movable": true,
+        "rotation_y": 0.0,
+        "protected": true,
+        "variant": "",
+        "note": "Приблизительное продолжение границы соседнего участка на 30 м к западу."
+      },
+      {
+        "id": "west-cross-fence-7",
+        "kind": "neighbour_fence",
+        "name": "Поперечный соседский забор от точки 7",
+        "points": [
+          {
+            "x": -14.575,
+            "z": 20.91158471
+          },
+          {
+            "x": -44.4489,
+            "z": 23.65858
+          }
+        ],
+        "width_m": 0.1,
+        "height_m": 2.0,
+        "style": "fence",
+        "color": [
+          102,
+          112,
+          108,
+          255
+        ],
+        "secondary_color": [
+          102,
+          112,
+          108,
+          255
+        ],
+        "movable": true,
+        "rotation_y": 0.0,
+        "protected": true,
+        "variant": "",
+        "note": "Приблизительное продолжение границы соседнего участка на 30 м к западу."
+      },
+      {
+        "id": "west-cross-fence-6",
+        "kind": "neighbour_fence",
+        "name": "Поперечный соседский забор от точки 6",
+        "points": [
+          {
+            "x": -19.813051665000003,
+            "z": 6.376501114999999
+          },
+          {
+            "x": -49.686948335,
+            "z": 9.123498885
+          }
+        ],
+        "width_m": 0.1,
+        "height_m": 2.0,
+        "style": "fence",
+        "color": [
+          102,
+          112,
+          108,
+          255
+        ],
+        "secondary_color": [
+          102,
+          112,
+          108,
+          255
+        ],
+        "movable": true,
+        "rotation_y": 0.0,
+        "protected": true,
+        "variant": "",
+        "note": "Приблизительное продолжение границы соседнего участка на 30 м к западу."
+      }
+    ],
+    "buildings": [
+      {
+        "id": "east-neighbour-large-house",
+        "kind": "neighbour_house",
+        "name": "Большой соседский дом 10×18",
+        "center": {
+          "x": 30.75,
+          "z": 31.75
+        },
+        "footprint": {
+          "width": 10.0,
+          "depth": 15.0
+        },
+        "height_m": 7.0,
+        "floors": 2,
+        "movable": true,
+        "wall_height_m": 4.8,
+        "roof": {
+          "shape": "gable",
+          "height_m": 2.2,
+          "overhang_m": 0.44999999999999996,
+          "ridge_axis": "y",
+          "color": [
+            100,
+            80,
+            52,
+            255
+          ]
+        },
+        "rotation_y": -5.0,
+        "protected": true,
+        "variant": "",
+        "color": [
+          181,
+          145,
+          94,
+          255
+        ],
+        "secondary_color": [
+          100,
+          80,
+          52,
+          255
+        ],
+        "note": "Приблизительное положение по схеме и фотографиям; крупный дом на участке 0525:160."
+      },
+      {
+        "id": "typical-bathhouse-437449ce",
+        "kind": "bathhouse",
+        "name": "Баня",
+        "center": {
+          "x": -16.0,
+          "z": 27.5
+        },
+        "footprint": {
+          "width": 6.0,
+          "depth": 3.0
+        },
+        "height_m": 3.7,
+        "floors": 1,
+        "movable": true,
+        "wall_height_m": 2.2,
+        "roof": {
+          "shape": "gable",
+          "height_m": 1.5,
+          "overhang_m": 0.12,
+          "ridge_axis": "x",
+          "color": [
+            73,
+            106,
+            67,
+            255
+          ]
+        },
+        "rotation_y": 90.0,
+        "protected": false,
+        "variant": "",
+        "color": [
+          154,
+          116,
+          80,
+          255
+        ],
+        "secondary_color": [
+          73,
+          106,
+          67,
+          255
+        ],
+        "note": "Типовой объект; редактируется общий параллелепипед X/Y/Z."
+      },
+      {
+        "id": "typical-house-4b7a87c6",
+        "kind": "house",
+        "name": "Дом",
+        "center": {
+          "x": -28.0,
+          "z": 37.0
+        },
+        "footprint": {
+          "width": 8.0,
+          "depth": 7.0
+        },
+        "height_m": 7.0,
+        "floors": 1,
+        "movable": true,
+        "wall_height_m": 5.25,
+        "roof": {
+          "shape": "gable",
+          "height_m": 1.75,
+          "overhang_m": 0.28,
+          "ridge_axis": "x",
+          "color": [
+            106,
+            63,
+            54,
+            255
+          ]
+        },
+        "rotation_y": 5.0,
+        "protected": false,
+        "variant": "",
+        "color": [
+          178,
+          122,
+          85,
+          255
+        ],
+        "secondary_color": [
+          106,
+          63,
+          54,
+          255
+        ],
+        "note": "Типовой объект; редактируется общий параллелепипед X/Y/Z."
+      },
+      {
+        "id": "typical-shed-c84b5b2e",
+        "kind": "shed",
+        "name": "Сарай",
+        "center": {
+          "x": -28.0,
+          "z": 32.25
+        },
+        "footprint": {
+          "width": 7.0,
+          "depth": 3.0
+        },
+        "height_m": 4.0,
+        "floors": 1,
+        "movable": true,
+        "wall_height_m": 2.5,
+        "roof": {
+          "shape": "gable",
+          "height_m": 1.5,
+          "overhang_m": 0.12,
+          "ridge_axis": "x",
+          "color": [
+            101,
+            71,
+            53,
+            255
+          ]
+        },
+        "rotation_y": 5.0,
+        "protected": false,
+        "variant": "",
+        "color": [
+          141,
+          103,
+          73,
+          255
+        ],
+        "secondary_color": [
+          101,
+          71,
+          53,
+          255
+        ],
+        "note": "Типовой объект; редактируется общий параллелепипед X/Y/Z."
+      }
+    ],
+    "features": [
+      {
+        "id": "nature-tree-2a8037ab",
+        "kind": "tree",
+        "name": "Дерево",
+        "center": {
+          "x": -9.5,
+          "z": 54.25
+        },
+        "size": {
+          "width": 8.0,
+          "depth": 8.0
+        },
+        "shape": "circle",
+        "height_m": 10.0,
+        "movable": true,
+        "rotation_y": 325.0,
+        "protected": false,
+        "variant": "pine_photo",
+        "color": [
+          255,
+          255,
+          255,
+          255
+        ],
+        "secondary_color": [
+          255,
+          255,
+          255,
+          255
+        ],
+        "note": "Природный объект; X/Y/Z задают общую габаритную оболочку, variant задаёт внешний вид."
+      },
+      {
+        "id": "nature-tree-da9217ce",
+        "kind": "tree",
+        "name": "Дерево",
+        "center": {
+          "x": -10.75,
+          "z": 80.5
+        },
+        "size": {
+          "width": 12.0,
+          "depth": 12.0
+        },
+        "shape": "circle",
+        "height_m": 14.0,
+        "movable": true,
+        "rotation_y": 0.0,
+        "protected": false,
+        "variant": "birch_photo",
+        "color": [
+          255,
+          255,
+          255,
+          255
+        ],
+        "secondary_color": [
+          255,
+          255,
+          255,
+          255
+        ],
+        "note": "Природный объект; X/Y/Z задают общую габаритную оболочку, variant задаёт внешний вид."
+      },
+      {
+        "id": "nature-tree-52dda891",
+        "kind": "tree",
+        "name": "Дерево",
+        "center": {
+          "x": -11.0,
+          "z": 37.25
+        },
+        "size": {
+          "width": 6.0,
+          "depth": 6.0
+        },
+        "shape": "circle",
+        "height_m": 8.0,
+        "movable": true,
+        "rotation_y": 0.0,
+        "protected": false,
+        "variant": "pine_photo",
+        "color": [
+          255,
+          255,
+          255,
+          255
+        ],
+        "secondary_color": [
+          255,
+          255,
+          255,
+          255
+        ],
+        "note": "Природный объект; X/Y/Z задают общую габаритную оболочку, variant задаёт внешний вид."
+      },
+      {
+        "id": "nature-tree-6417e724",
+        "kind": "tree",
+        "name": "Дерево",
+        "center": {
+          "x": -14.0,
+          "z": 35.0
+        },
+        "size": {
+          "width": 6.0,
+          "depth": 6.0
+        },
+        "shape": "circle",
+        "height_m": 10.0,
+        "movable": true,
+        "rotation_y": 0.0,
+        "protected": false,
+        "variant": "ash_photo",
+        "color": [
+          255,
+          255,
+          255,
+          255
+        ],
+        "secondary_color": [
+          255,
+          255,
+          255,
+          255
+        ],
+        "note": "Природный объект; X/Y/Z задают общую габаритную оболочку, variant задаёт внешний вид."
+      }
+    ],
+    "primitives": [
+      {
+        "id": "road-straight-entry",
+        "name": "Дорога — прямой участок у заезда",
+        "shape": "rectangular_prism",
+        "center": {
+          "x": -3.75,
+          "z": 84.5
+        },
+        "size": {
+          "x": 8.0,
+          "y": 3.9,
+          "z": 0.08
+        },
+        "movable": true,
+        "rotation_y": 90.0,
+        "protected": true,
+        "variant": "gravel",
+        "arc_angle_deg": 45.0,
+        "color": [
+          190,
+          190,
+          182,
+          255
+        ],
+        "secondary_color": [
+          190,
+          190,
+          182,
+          255
+        ],
+        "note": "Первый прямой участок щебёночной дороги; X — длина, Y — ширина, Z — толщина."
+      },
+      {
+        "id": "road-turn-arc",
+        "name": "Дорога — поворотная дуга",
+        "shape": "arc",
+        "center": {
+          "x": 0.75,
+          "z": 75.75
+        },
+        "size": {
+          "x": 17.0,
+          "y": 4.0,
+          "z": 0.08
+        },
+        "movable": true,
+        "rotation_y": 235.0,
+        "protected": true,
+        "variant": "gravel",
+        "arc_angle_deg": 75.0,
+        "color": [
+          190,
+          190,
+          182,
+          255
+        ],
+        "secondary_color": [
+          190,
+          190,
+          182,
+          255
+        ],
+        "note": "Дуга радиусом около 5 м соединяет прямые участки. R/T изменяют угол кривизны."
+      },
+      {
+        "id": "road-straight-northeast",
+        "name": "Дорога — прямой участок на северо-восток",
+        "shape": "rectangular_prism",
+        "center": {
+          "x": 25.25,
+          "z": 69.25
+        },
+        "size": {
+          "x": 42.1659,
+          "y": 3.9,
+          "z": 0.08
+        },
+        "movable": true,
+        "rotation_y": 0.0,
+        "protected": true,
+        "variant": "gravel",
+        "arc_angle_deg": 45.0,
+        "color": [
+          190,
+          190,
+          182,
+          255
+        ],
+        "secondary_color": [
+          190,
+          190,
+          182,
+          255
+        ],
+        "note": "Единый прямой участок после дуги; включает соединительный отрезок и прежнее 30-метровое продолжение на северо-восток."
+      },
+      {
+        "id": "utility-pole-front",
+        "name": "Электрический столб",
+        "shape": "rectangular_prism",
+        "center": {
+          "x": 2.0,
+          "z": 66.0
+        },
+        "size": {
+          "x": 0.4,
+          "y": 0.4,
+          "z": 10.0
+        },
+        "movable": true,
+        "rotation_y": 0.0,
+        "protected": true,
+        "variant": "",
+        "arc_angle_deg": 45.0,
+        "color": [
+          150,
+          150,
+          145,
+          255
+        ],
+        "secondary_color": [
+          150,
+          150,
+          145,
+          255
+        ],
+        "note": "Бетонный электрический столб; редактируется только в режиме создания участка."
+      },
+      {
+        "id": "custom-18dc7241",
+        "name": "Заезд",
+        "shape": "rectangular_prism",
+        "center": {
+          "x": 17.0,
+          "z": 57.5
+        },
+        "size": {
+          "x": 20.0,
+          "y": 4.0,
+          "z": 0.2
+        },
+        "movable": true,
+        "rotation_y": 85.0,
+        "protected": false,
+        "variant": "",
+        "arc_angle_deg": 45.0,
+        "color": [
+          204,
+          202,
+          188,
+          255
+        ],
+        "secondary_color": [
+          204,
+          202,
+          188,
+          255
+        ],
+        "note": "Добавлено через 3D-панель; X/Y — план, Z — высота."
+      },
+      {
+        "id": "custom-04bc5e32",
+        "name": "Параллелепипед",
+        "shape": "rectangular_prism",
+        "center": {
+          "x": -17.25,
+          "z": 13.5
+        },
+        "size": {
+          "x": 15.0,
+          "y": 0.1,
+          "z": 2.0
+        },
+        "movable": true,
+        "rotation_y": 290.0,
+        "protected": false,
+        "variant": "",
+        "arc_angle_deg": 45.0,
+        "color": [
+          102,
+          112,
+          108,
+          255
+        ],
+        "secondary_color": [
+          102,
+          112,
+          108,
+          255
+        ],
+        "note": "Добавлено через 3D-панель; X/Y — план, Z — высота."
+      },
+      {
+        "id": "custom-2647f543",
+        "name": "Параллелепипед",
+        "shape": "rectangular_prism",
+        "center": {
+          "x": -29.75,
+          "z": 74.5
+        },
+        "size": {
+          "x": 35.0,
+          "y": 0.1,
+          "z": 2.0
+        },
+        "movable": true,
+        "rotation_y": 5.0,
+        "protected": false,
+        "variant": "",
+        "arc_angle_deg": 45.0,
+        "color": [
+          181,
+          185,
+          184,
+          255
+        ],
+        "secondary_color": [
+          181,
+          185,
+          184,
+          255
+        ],
+        "note": "Добавлено через 3D-панель; X/Y — план, Z — высота."
+      },
+      {
+        "id": "custom-339b8a22",
+        "name": "Параллелепипед",
+        "shape": "rectangular_prism",
+        "center": {
+          "x": -12.25,
+          "z": 78.5
+        },
+        "size": {
+          "x": 11.0,
+          "y": 0.1,
+          "z": 2.0
+        },
+        "movable": true,
+        "rotation_y": 270.0,
+        "protected": false,
+        "variant": "",
+        "arc_angle_deg": 45.0,
+        "color": [
+          181,
+          185,
+          184,
+          255
+        ],
+        "secondary_color": [
+          181,
+          185,
+          184,
+          255
+        ],
+        "note": "Добавлено через 3D-панель; X/Y — план, Z — высота."
+      }
+    ]
+  },
+  "layouts": [
+    {
+      "id": "balanced",
+      "name": "Вариант 1 — сбалансированный",
+      "description": "Дом по центру в 15 м от фасада; короткий заезд к гаражу, баня и сад разнесены.",
+      "buildings": [
+        {
+          "id": "house",
+          "kind": "house",
+          "name": "Дом 12×8",
+          "center": {
+            "x": 6.75,
+            "z": 38.75
+          },
+          "footprint": {
+            "width": 12.0,
+            "depth": 8.0
+          },
+          "height_m": 3.6,
+          "floors": 1,
+          "movable": true,
+          "wall_height_m": 2.7,
+          "roof": {
+            "shape": "gable",
+            "height_m": 0.9,
+            "overhang_m": 0.35,
+            "ridge_axis": "x",
+            "color": [
+              92,
+              49,
+              42,
+              255
+            ]
+          },
+          "rotation_y": 85.0,
+          "protected": false,
+          "variant": "",
+          "color": [
+            202,
+            129,
+            72,
+            255
+          ],
+          "secondary_color": [
+            92,
+            49,
+            42,
+            255
+          ],
+          "note": "Северная стена отстоит от переднего забора примерно на 15 м."
+        },
+        {
+          "id": "garage",
+          "kind": "garage",
+          "name": "Гараж",
+          "center": {
+            "x": -8.5,
+            "z": 45.75
+          },
+          "footprint": {
+            "width": 6.0,
+            "depth": 7.0
+          },
+          "height_m": 3.6,
+          "floors": 1,
+          "movable": true,
+          "wall_height_m": 3.0,
+          "roof": {
+            "shape": "shed",
+            "height_m": 0.6000000000000001,
+            "overhang_m": 0.2,
+            "ridge_axis": "x",
+            "color": [
+              70,
+              84,
+              93,
+              255
+            ]
+          },
+          "rotation_y": 275.0,
+          "protected": false,
+          "variant": "",
+          "color": [
+            105,
+            112,
+            121,
+            255
+          ],
+          "secondary_color": [
+            70,
+            84,
+            93,
+            255
+          ],
+          "note": "Рядом с воротами для короткого заезда."
+        },
+        {
+          "id": "bathhouse",
+          "kind": "bathhouse",
+          "name": "Баня",
+          "center": {
+            "x": -12.5,
+            "z": 10.0
+          },
+          "footprint": {
+            "width": 5.0,
+            "depth": 5.0
+          },
+          "height_m": 4.5,
+          "floors": 1,
+          "movable": true,
+          "wall_height_m": 2.0,
+          "roof": {
+            "shape": "gable",
+            "height_m": 2.5,
+            "overhang_m": 0.2,
+            "ridge_axis": "x",
+            "color": [
+              73,
+              106,
+              67,
+              255
+            ]
+          },
+          "rotation_y": 275.0,
+          "protected": false,
+          "variant": "",
+          "color": [
+            131,
+            83,
+            49,
+            255
+          ],
+          "secondary_color": [
+            73,
+            106,
+            67,
+            255
+          ],
+          "note": "Западная часть участка, отдельно от дома."
+        }
+      ],
+      "features": [
+        {
+          "id": "existing_driveway",
+          "kind": "driveway_existing",
+          "name": "Заезд 3 м",
+          "center": {
+            "x": -3.75,
+            "z": 58.0
+          },
+          "size": {
+            "width": 5.1,
+            "depth": 3.0
+          },
+          "shape": "rectangle",
+          "height_m": 0.2,
+          "movable": true,
+          "rotation_y": 0.0,
+          "protected": false,
+          "variant": "",
+          "color": [
+            105,
+            110,
+            115,
+            230
+          ],
+          "secondary_color": [
+            105,
+            110,
+            115,
+            230
+          ],
+          "note": "Существующее щебеночное покрытие: около 3 м внутрь участка от общего проема ворот и калитки."
+        },
+        {
+          "id": "planned_gravel_pad",
+          "kind": "gravel_fill",
+          "name": "Досыпать",
+          "center": {
+            "x": -3.0,
+            "z": 48.25
+          },
+          "size": {
+            "width": 16.0,
+            "depth": 3.24738
+          },
+          "shape": "rectangle",
+          "height_m": 0.2,
+          "movable": true,
+          "rotation_y": 90.0,
+          "protected": false,
+          "variant": "",
+          "color": [
+            128,
+            128,
+            128,
+            255
+          ],
+          "secondary_color": [
+            105,
+            110,
+            115,
+            255
+          ],
+          "note": "Планируемая досыпка от конца существующего заезда до северной стороны гаража, с расширением под площадку."
+        },
+        {
+          "id": "septic",
+          "kind": "septic",
+          "name": "Септик",
+          "center": {
+            "x": 8.0,
+            "z": 55.5
+          },
+          "size": {
+            "width": 2.5,
+            "depth": 2.5
+          },
+          "shape": "circle",
+          "height_m": 0.2,
+          "movable": true,
+          "rotation_y": 0.0,
+          "protected": false,
+          "variant": "",
+          "color": [
+            178,
+            85,
+            152,
+            230
+          ],
+          "secondary_color": [
+            178,
+            85,
+            152,
+            230
+          ],
+          "note": "Эскизное положение на противоположной от колодца стороне."
+        },
+        {
+          "id": "nature-garden_bed-e3892325",
+          "kind": "garden_bed",
+          "name": "Грядка",
+          "center": {
+            "x": -4.5,
+            "z": 2.5
+          },
+          "size": {
+            "width": 2.0,
+            "depth": 8.0
+          },
+          "shape": "rectangle",
+          "height_m": 0.5,
+          "movable": true,
+          "rotation_y": 270.0,
+          "protected": false,
+          "variant": "carrot",
+          "color": [
+            76,
+            154,
+            61,
+            255
+          ],
+          "secondary_color": [
+            59,
+            120,
+            48,
+            255
+          ],
+          "note": "Природный объект; X/Y/Z задают общую габаритную оболочку, variant задаёт внешний вид."
+        },
+        {
+          "id": "nature-garden_bed-253a8bac",
+          "kind": "garden_bed",
+          "name": "Грядка",
+          "center": {
+            "x": -4.5,
+            "z": 5.75
+          },
+          "size": {
+            "width": 2.0,
+            "depth": 8.0
+          },
+          "shape": "rectangle",
+          "height_m": 0.5,
+          "movable": true,
+          "rotation_y": 270.0,
+          "protected": false,
+          "variant": "carrot",
+          "color": [
+            76,
+            154,
+            61,
+            255
+          ],
+          "secondary_color": [
+            59,
+            120,
+            48,
+            255
+          ],
+          "note": "Природный объект; X/Y/Z задают общую габаритную оболочку, variant задаёт внешний вид."
+        },
+        {
+          "id": "nature-garden_bed-d262f2b7",
+          "kind": "garden_bed",
+          "name": "Грядка",
+          "center": {
+            "x": 4.5,
+            "z": 2.5
+          },
+          "size": {
+            "width": 2.0,
+            "depth": 8.0
+          },
+          "shape": "rectangle",
+          "height_m": 0.5,
+          "movable": true,
+          "rotation_y": 270.0,
+          "protected": false,
+          "variant": "carrot",
+          "color": [
+            76,
+            154,
+            61,
+            255
+          ],
+          "secondary_color": [
+            59,
+            120,
+            48,
+            255
+          ],
+          "note": "Природный объект; X/Y/Z задают общую габаритную оболочку, variant задаёт внешний вид."
+        },
+        {
+          "id": "nature-garden_bed-fb2caef5",
+          "kind": "garden_bed",
+          "name": "Грядка",
+          "center": {
+            "x": 4.5,
+            "z": 5.25
+          },
+          "size": {
+            "width": 0.8,
+            "depth": 8.0
+          },
+          "shape": "rectangle",
+          "height_m": 0.5,
+          "movable": true,
+          "rotation_y": 90.0,
+          "protected": false,
+          "variant": "carrot",
+          "color": [
+            76,
+            154,
+            61,
+            255
+          ],
+          "secondary_color": [
+            59,
+            120,
+            48,
+            255
+          ],
+          "note": "Природный объект; X/Y/Z задают общую габаритную оболочку, variant задаёт внешний вид."
+        },
+        {
+          "id": "nature-garden_bed-8c591c5d",
+          "kind": "garden_bed",
+          "name": "Грядка",
+          "center": {
+            "x": 4.5,
+            "z": 6.75
+          },
+          "size": {
+            "width": 0.8,
+            "depth": 8.0
+          },
+          "shape": "rectangle",
+          "height_m": 0.5,
+          "movable": true,
+          "rotation_y": 90.0,
+          "protected": false,
+          "variant": "carrot",
+          "color": [
+            76,
+            154,
+            61,
+            255
+          ],
+          "secondary_color": [
+            59,
+            120,
+            48,
+            255
+          ],
+          "note": "Природный объект; X/Y/Z задают общую габаритную оболочку, variant задаёт внешний вид."
+        }
+      ],
+      "primitives": [
+        {
+          "id": "custom-54c8377e",
+          "name": "Новый объект",
+          "shape": "rectangular_prism",
+          "center": {
+            "x": -12.25,
+            "z": 25.25
+          },
+          "size": {
+            "x": 2.4,
+            "y": 6.0,
+            "z": 2.5
+          },
+          "movable": true,
+          "rotation_y": 5.0,
+          "protected": false,
+          "variant": "",
+          "arc_angle_deg": 45.0,
+          "color": [
+            128,
+            128,
+            128,
+            255
+          ],
+          "secondary_color": [
+            0,
+            0,
+            128,
+            255
+          ],
+          "note": "Добавлено через 3D-панель; X/Y — план, Z — высота."
+        }
+      ],
+      "hidden_fixed_ids": []
+    },
+    {
+      "id": "east_house",
+      "name": "Вариант 2 — дом на востоке",
+      "description": "Дом смещен к востоку, западная сторона отдана гаражу и бане, юг — большому саду.",
+      "buildings": [
+        {
+          "id": "house",
+          "kind": "house",
+          "name": "Дом 12×8",
+          "center": {
+            "x": 7.25,
+            "z": 41.25
+          },
+          "footprint": {
+            "width": 12.0,
+            "depth": 8.0
+          },
+          "height_m": 3.6,
+          "floors": 1,
+          "movable": true,
+          "wall_height_m": 2.7,
+          "roof": {
+            "shape": "gable",
+            "height_m": 0.9,
+            "overhang_m": 0.35,
+            "ridge_axis": "x",
+            "color": [
+              92,
+              49,
+              42,
+              255
+            ]
+          },
+          "rotation_y": 85.0,
+          "protected": false,
+          "variant": "",
+          "color": [
+            202,
+            129,
+            72,
+            255
+          ],
+          "secondary_color": [
+            92,
+            49,
+            42,
+            255
+          ],
+          "note": "Северная стена отстоит от переднего забора примерно на 15 м."
+        },
+        {
+          "id": "garage",
+          "kind": "garage",
+          "name": "Гараж",
+          "center": {
+            "x": -7.5,
+            "z": 50.0
+          },
+          "footprint": {
+            "width": 6.0,
+            "depth": 7.0
+          },
+          "height_m": 3.6,
+          "floors": 1,
+          "movable": true,
+          "wall_height_m": 3.0,
+          "roof": {
+            "shape": "shed",
+            "height_m": 0.6000000000000001,
+            "overhang_m": 0.2,
+            "ridge_axis": "x",
+            "color": [
+              70,
+              84,
+              93,
+              255
+            ]
+          },
+          "rotation_y": 0.0,
+          "protected": false,
+          "variant": "",
+          "color": [
+            105,
+            112,
+            121,
+            255
+          ],
+          "secondary_color": [
+            70,
+            84,
+            93,
+            255
+          ],
+          "note": "У въезда."
+        },
+        {
+          "id": "bathhouse",
+          "kind": "bathhouse",
+          "name": "Баня",
+          "center": {
+            "x": -9.5,
+            "z": 24.0
+          },
+          "footprint": {
+            "width": 5.0,
+            "depth": 5.0
+          },
+          "height_m": 5.5,
+          "floors": 1,
+          "movable": true,
+          "wall_height_m": 3.0,
+          "roof": {
+            "shape": "gable",
+            "height_m": 2.5,
+            "overhang_m": 0.2,
+            "ridge_axis": "x",
+            "color": [
+              73,
+              106,
+              67,
+              255
+            ]
+          },
+          "rotation_y": 0.0,
+          "protected": false,
+          "variant": "",
+          "color": [
+            131,
+            83,
+            49,
+            255
+          ],
+          "secondary_color": [
+            73,
+            106,
+            67,
+            255
+          ],
+          "note": "Вдоль западной стороны."
+        }
+      ],
+      "features": [
+        {
+          "id": "existing_driveway",
+          "kind": "driveway_existing",
+          "name": "Заезд 3 м",
+          "center": {
+            "x": -3.45,
+            "z": 58.24738488
+          },
+          "size": {
+            "width": 5.1,
+            "depth": 3.0
+          },
+          "shape": "rectangle",
+          "height_m": 0.2,
+          "movable": true,
+          "rotation_y": 0.0,
+          "protected": false,
+          "variant": "",
+          "color": [
+            105,
+            110,
+            115,
+            230
+          ],
+          "secondary_color": [
+            105,
+            110,
+            115,
+            230
+          ],
+          "note": "Существующее щебеночное покрытие: около 3 м внутрь участка от общего проема ворот и калитки."
+        },
+        {
+          "id": "planned_gravel_pad",
+          "kind": "gravel_fill",
+          "name": "Досыпать",
+          "center": {
+            "x": -5.7,
+            "z": 55.12369244
+          },
+          "size": {
+            "width": 9.6,
+            "depth": 3.24738488
+          },
+          "shape": "rectangle",
+          "height_m": 0.2,
+          "movable": true,
+          "rotation_y": 0.0,
+          "protected": false,
+          "variant": "",
+          "color": [
+            185,
+            185,
+            180,
+            165
+          ],
+          "secondary_color": [
+            185,
+            185,
+            180,
+            165
+          ],
+          "note": "Планируемая досыпка от конца существующего заезда до северной стороны гаража, с расширением под площадку."
+        },
+        {
+          "id": "garden",
+          "kind": "garden",
+          "name": "Большой сад",
+          "center": {
+            "x": -0.25,
+            "z": 31.75
+          },
+          "size": {
+            "width": 13.0,
+            "depth": 18.0
+          },
+          "shape": "rectangle",
+          "height_m": 0.2,
+          "movable": true,
+          "rotation_y": 0.0,
+          "protected": false,
+          "variant": "",
+          "color": [
+            88,
+            170,
+            78,
+            150
+          ],
+          "secondary_color": [
+            88,
+            170,
+            78,
+            150
+          ],
+          "note": "Увеличенная садовая зона в южной половине."
+        },
+        {
+          "id": "septic",
+          "kind": "septic",
+          "name": "Септик",
+          "center": {
+            "x": -10.0,
+            "z": 9.0
+          },
+          "size": {
+            "width": 2.5,
+            "depth": 2.5
+          },
+          "shape": "circle",
+          "height_m": 0.2,
+          "movable": true,
+          "rotation_y": 0.0,
+          "protected": false,
+          "variant": "",
+          "color": [
+            178,
+            85,
+            152,
+            230
+          ],
+          "secondary_color": [
+            178,
+            85,
+            152,
+            230
+          ],
+          "note": "Эскизное положение; требуется проверка отступов."
+        }
+      ],
+      "primitives": [],
+      "hidden_fixed_ids": []
+    },
+    {
+      "id": "near_point_7",
+      "name": "Вариант 3 — дом ближе к точке 7",
+      "description": "Дом перенесен в среднюю часть и заканчивается севернее точки 7; баня стоит на востоке.",
+      "buildings": [
+        {
+          "id": "house",
+          "kind": "house",
+          "name": "Дом 12×8",
+          "center": {
+            "x": 3.75,
+            "z": 27.5
+          },
+          "footprint": {
+            "width": 12.0,
+            "depth": 8.0
+          },
+          "height_m": 5.6,
+          "floors": 1,
+          "movable": true,
+          "wall_height_m": 4.199999999999999,
+          "roof": {
+            "shape": "gable",
+            "height_m": 1.4,
+            "overhang_m": 0.35,
+            "ridge_axis": "x",
+            "color": [
+              111,
+              71,
+              40,
+              255
+            ]
+          },
+          "rotation_y": 0.0,
+          "protected": false,
+          "variant": "",
+          "color": [
+            202,
+            129,
+            72,
+            255
+          ],
+          "secondary_color": [
+            111,
+            71,
+            40,
+            255
+          ],
+          "note": "Южная стена находится примерно у продольной отметки точки 7."
+        },
+        {
+          "id": "garage",
+          "kind": "garage",
+          "name": "Гараж",
+          "center": {
+            "x": -7.5,
+            "z": 50.0
+          },
+          "footprint": {
+            "width": 6.0,
+            "depth": 7.0
+          },
+          "height_m": 3.6,
+          "floors": 1,
+          "movable": true,
+          "wall_height_m": 3.0,
+          "roof": {
+            "shape": "shed",
+            "height_m": 0.6000000000000001,
+            "overhang_m": 0.2,
+            "ridge_axis": "x",
+            "color": [
+              70,
+              84,
+              93,
+              255
+            ]
+          },
+          "rotation_y": 0.0,
+          "protected": false,
+          "variant": "",
+          "color": [
+            105,
+            112,
+            121,
+            255
+          ],
+          "secondary_color": [
+            70,
+            84,
+            93,
+            255
+          ],
+          "note": "У въезда."
+        },
+        {
+          "id": "bathhouse",
+          "kind": "bathhouse",
+          "name": "Баня",
+          "center": {
+            "x": 7.5,
+            "z": 40.0
+          },
+          "footprint": {
+            "width": 5.0,
+            "depth": 5.0
+          },
+          "height_m": 5.5,
+          "floors": 1,
+          "movable": true,
+          "wall_height_m": 3.0,
+          "roof": {
+            "shape": "gable",
+            "height_m": 2.5,
+            "overhang_m": 0.2,
+            "ridge_axis": "x",
+            "color": [
+              73,
+              106,
+              67,
+              255
+            ]
+          },
+          "rotation_y": 0.0,
+          "protected": false,
+          "variant": "",
+          "color": [
+            131,
+            83,
+            49,
+            255
+          ],
+          "secondary_color": [
+            73,
+            106,
+            67,
+            255
+          ],
+          "note": "В северо-восточной части, отдельно от дома."
+        }
+      ],
+      "features": [
+        {
+          "id": "existing_driveway",
+          "kind": "driveway_existing",
+          "name": "Заезд 3 м",
+          "center": {
+            "x": -3.45,
+            "z": 58.24738488
+          },
+          "size": {
+            "width": 5.1,
+            "depth": 3.0
+          },
+          "shape": "rectangle",
+          "height_m": 0.2,
+          "movable": true,
+          "rotation_y": 0.0,
+          "protected": false,
+          "variant": "",
+          "color": [
+            105,
+            110,
+            115,
+            230
+          ],
+          "secondary_color": [
+            105,
+            110,
+            115,
+            230
+          ],
+          "note": "Существующее щебеночное покрытие: около 3 м внутрь участка от общего проема ворот и калитки."
+        },
+        {
+          "id": "planned_gravel_pad",
+          "kind": "gravel_fill",
+          "name": "Досыпать",
+          "center": {
+            "x": -5.75,
+            "z": 55.0
+          },
+          "size": {
+            "width": 9.6,
+            "depth": 3.24738488
+          },
+          "shape": "rectangle",
+          "height_m": 0.2,
+          "movable": true,
+          "rotation_y": 0.0,
+          "protected": false,
+          "variant": "",
+          "color": [
+            185,
+            185,
+            180,
+            165
+          ],
+          "secondary_color": [
+            185,
+            185,
+            180,
+            165
+          ],
+          "note": "Планируемая досыпка от конца существующего заезда до северной стороны гаража, с расширением под площадку."
+        },
+        {
+          "id": "garden",
+          "kind": "garden",
+          "name": "Сад",
+          "center": {
+            "x": -1.0,
+            "z": 11.0
+          },
+          "size": {
+            "width": 17.0,
+            "depth": 12.0
+          },
+          "shape": "rectangle",
+          "height_m": 0.2,
+          "movable": true,
+          "rotation_y": 0.0,
+          "protected": false,
+          "variant": "",
+          "color": [
+            88,
+            170,
+            78,
+            150
+          ],
+          "secondary_color": [
+            88,
+            170,
+            78,
+            150
+          ],
+          "note": "Широкая садовая зона в южной части."
+        },
+        {
+          "id": "septic",
+          "kind": "septic",
+          "name": "Септик",
+          "center": {
+            "x": -11.0,
+            "z": 33.0
+          },
+          "size": {
+            "width": 2.5,
+            "depth": 2.5
+          },
+          "shape": "circle",
+          "height_m": 0.2,
+          "movable": true,
+          "rotation_y": 0.0,
+          "protected": false,
+          "variant": "",
+          "color": [
+            178,
+            85,
+            152,
+            230
+          ],
+          "secondary_color": [
+            178,
+            85,
+            152,
+            230
+          ],
+          "note": "Эскизное положение; требуется проверка отступов."
+        }
+      ],
+      "primitives": [],
+      "hidden_fixed_ids": []
+    }
+  ],
+  "active_layout_id": "near_point_7"
+}
